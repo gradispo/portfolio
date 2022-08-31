@@ -12,3 +12,6 @@ FLEX
 
 CSS
  - 수업시간에 배운 내용으로 ANIMATION CSS를 활용해서 움직이는 이미지와 텍스트로 구현해봤습니다.
+
+
+[배포주소](https://gradispo.github.io/portfolio)
