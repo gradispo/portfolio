@@ -1,0 +1,248 @@
+ .sect_padd {
+     padding-top: 100px;
+     padding-left: 24px;
+     padding-right: 24px;
+ }
+
+ .sect_text_h1 {
+     word-break: keep-all;
+     animation: fadeUp 2s forwards;
+     font-weight: 800;
+     font-size: 54px;
+     text-align: center;
+     width: 100%;
+     color: rgb(41, 41, 41);
+     letter-spacing: -6px;
+     line-height: 65px;
+
+ }
+
+ .sect_text_h2 {
+     word-break: keep-all;
+     animation: fade 3s forwards;
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 35px;
+     width: 100%;
+     color: rgb(41, 41, 41);
+     margin: 20px 0px;
+     letter-spacing: -2px;
+     text-align: center;
+ }
+
+ /* 앱 이미지 크기 */
+ .app_img {
+     animation: fade 3s forwards;
+     width: 206px;
+     height: 80px;
+ }
+
+ /* 폰 배경, 폰 이미지 */
+ .phone_bg {
+     display: flex;
+     flex-direction: column;
+     -webkit-box-align: center;
+     align-items: center;
+     height: 460px;
+     background: rgb(91, 197, 0);
+     box-sizing: border-box;
+     overflow: hidden;
+     border-radius: 20px;
+     margin-top: 50px;
+     box-shadow: rgb(0 0 0 / 10%) 0px 6px 20px 0px, rgb(0 0 0 / 5%) 0px 1px 1px 0px !important;
+ }
+
+ .phone_png {
+     animation: fadeBounce 5s forwards;
+     /* animation-name: fadeBounce;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; */
+     width: 400px;
+     margin-top: 80px;
+ }
+
+ /* 섹션 공통사이즈 */
+ .index {
+     padding: 50px 0px;
+ }
+
+ .index_text {
+     margin: 0 auto;
+     width: 100%;
+     min-width: 300px;
+     max-width: 400px;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ .index_text1 {
+
+     font-weight: bolder;
+     font-size: 30px;
+     line-height: 60px;
+     margin: 4px 0px;
+     color: rgb(36, 36, 36);
+     letter-spacing: -2px;
+ }
+
+ .index_text2 {
+     word-break: keep-all;
+     font-weight: 400;
+     font-size: 17px;
+     line-height: 27px;
+     color: rgb(117, 117, 117);
+     margin: 4px 0px;
+     letter-spacing: -1px;
+ }
+
+ .index_img {
+
+     width: 100%;
+     min-width: 300px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 20px 0px;
+ }
+
+
+ .app {
+     margin-top: 25px;
+     display: flex;
+     flex: 1 1 0%;
+     flex-flow: row wrap;
+     justify-content: center;
+     padding-bottom: 50px;
+ }
+
+ /* 섹션03 */
+ .sect03 {
+     width: 100%;
+     padding: 100px 0px;
+     background-color: rgb(250, 250, 250);
+     text-align: center;
+ }
+
+ .sect03_text {
+     font-size: 28px;
+     font-weight: 600;
+     line-height: 150%;
+     color: rgb(41, 41, 41);
+
+ }
+
+ .sect03_span span {
+     color: rgb(91, 197, 0);
+ }
+
+ /* 섹션04 */
+ .sect04 {
+     padding: 50px 0px;
+     letter-spacing: -1px;
+ }
+
+
+ @media screen and (max-width: 1200px) {
+
+     .container {
+         max-width: 95%;
+     }
+ }
+
+ @media screen and (max-width: 992px) {
+     .container {
+         margin: 0 auto;
+         max-width: 768px;
+
+     }
+
+ }
+
+ @media screen and (max-width: 768px) {
+
+     .navbar__button {
+         display: none;
+     }
+
+     .container {
+         animation: fade 1s forwards;
+     }
+
+     .navbar {
+         animation: fade 1s forwards;
+     }
+
+
+
+     /* 섹션02 공통사이즈 */
+     .index {
+         max-width: 75%;
+         flex-wrap: wrap-reverse;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+     }
+
+     .index_text1 {
+         line-height: 30px;
+         letter-spacing: -2px;
+         font-size: 27px;
+     }
+
+     .index_text2 {
+         font-size: 15px;
+         line-height: 24px;
+     }
+
+     .index_img {
+         margin: 0 auto;
+         max-width: 75%;
+         width: 100%;
+         min-width: 300px;
+     }
+
+     .sect03 {
+         width: 100%;
+         padding: 100px 0px;
+         background-color: rgb(250, 250, 250);
+         text-align: center;
+     }
+
+     .sect03_text {
+         font-size: 26px;
+         font-weight: 500;
+         line-height: 170%;
+         color: rgb(41, 41, 41);
+         letter-spacing: -1px;
+
+     }
+
+     .sect03_span {
+         letter-spacing: -2px;
+     }
+
+     .sect04 {
+         text-align: center;
+     }
+
+     .sect05 {
+         text-align: center;
+         flex-wrap: wrap-reverse;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         padding-bottom: 60px;
+         letter-spacing: -1px;
+     }
+
+
+
+
+
+ }

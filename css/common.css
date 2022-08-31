@@ -1,0 +1,211 @@
+:root {
+    --text-color: #f0f4f5;
+    --background-color: #fff;
+    --accent-color: #000;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro';
+}
+
+.no-scroll {
+    -ms-overflow-style: none;
+    /* IE, Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.no-scroll::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+/* 풋터 */
+.footer {
+    padding-top: 105px;
+    padding-bottom: 120px;
+    background: rgb(73, 80, 87);
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot {
+    width: 100%;
+    list-style: none;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin: 6px 0px;
+    color: rgb(219, 219, 219);
+}
+
+
+.foot_logo {
+    width: 120px;
+    height: 27px;
+}
+
+.foot_menu {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0;
+    list-style: none;
+}
+
+.foot_menu li {
+    font-size: 16px;
+    font-weight: 900;
+    list-style: none;
+    text-align: center;
+    flex-direction: row;
+    align-items: flex-start;
+    float: left;
+    padding: 0px 20px;
+}
+
+.foot_menu li>a {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .foot {
+        padding-left: 12px;
+        padding-right: 12px;
+        line-height: 25px;
+        font-size: 13px;
+    }
+
+    .foot_logo {
+        margin-bottom: 40px;
+    }
+
+    .foot_menu {
+        justify-content: start;
+    }
+
+    .foot_menu ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foot_menu li {
+        padding: 5px;
+        text-align: left;
+        letter-spacing: -1px;
+    }
+
+    .foot_menu li a {
+        text-decoration: none;
+    }
+
+    .foot a {
+        text-decoration: underline;
+    }
+
+    .foot a:hover {
+        color: #fff;
+
+    }
+}
+
+
+
+
+
+/* Bounce 애니메이션 */
+@keyframes fadeBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    55% {
+        transform: translateY(-6px);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    85% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bounce 애니메이션 */
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bounce 애니메이션 */
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Bounce 애니메이션 */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(15%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
